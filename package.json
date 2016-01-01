@@ -1,0 +1,58 @@
+{
+  "name": "record-schedule",
+  "description": "Record audio on a recurring schedule and post to a server using Sox and Lame",
+  "version": "0.1.0",
+  "homepage": "https://github.com/adriancarriger/record-schedule",
+  "bugs": "https://github.com/adriancarriger/record-schedule/issues",
+  "license": "MIT",
+  "main": "lib/record-schedule.js",
+  "author": {
+    "name": "Adrian Carriger",
+    "email": "acarriger@gmail.com",
+    "url": "http://adriancarriger.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adriancarriger/record-schedule"
+  },
+  "keywords": [
+    "audio",
+    "record",
+    "post",
+    "http"
+  ],
+  "preferGlobal": true,
+  "bin": {
+    "record-schedule": "lib/index.js"
+  },
+  "dependencies": {
+    "moment": "^2.10.6",
+    "node-schedule": "^0.6.0",
+    "request": "^2.67.0"
+  },
+  "optionalDependencies": {
+    "node-mac": "^0.1.3",
+    "node-windows": "^0.1.11",
+    "node-linux": "^0.1.2"
+  },
+  "devDependencies": {
+    "coveralls": "^2.11.1",
+    "gulp": "^3.8.8",
+    "gulp-bump": "^0.1.11",
+    "gulp-istanbul": "^0.5.0",
+    "gulp-jscs": "^1.1.2",
+    "gulp-jshint": "^1.8.4",
+    "gulp-load-plugins": "^0.6.0",
+    "gulp-mocha": "^1.1.0",
+    "gulp-plumber": "^0.6.5",
+    "gulp-util": "^3.0.1",
+    "jshint-stylish": "^0.4.0",
+    "mocha-sinon": "^1.1.4",
+    "should": "^4.0.4",
+    "sinon": "^1.17.2"
+  },
+  "scripts": {
+    "coveralls": "gulp test && cat coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
+    "test": "gulp test"
+  }
+}
