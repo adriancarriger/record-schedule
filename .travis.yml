@@ -7,4 +7,4 @@ before_install:
 - sudo apt-get install -y libmp3lame-dev
 - sudo apt-get install -y libsox-dev
 after_script:
-  - npm run coveralls
+  - sudo npm run coveralls
