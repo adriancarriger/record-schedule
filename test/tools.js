@@ -1,6 +1,7 @@
 'use strict';
 
-var tools = require('../lib/tools.js');
+var path = require('path');
+var tools = require( path.normalize('../lib/tools.js') );
 var assert = require('should');
 require('mocha-sinon');
 

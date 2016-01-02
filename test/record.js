@@ -1,14 +1,15 @@
 'use strict';
 
-var record = require('../lib/record.js');
-var tools = require('../lib/tools.js');
+var fs = require('fs');
+var path = require('path');
+var record = require( path.normalize('../lib/record.js') );
+var tools = require( path.normalize('../lib/tools.js') );
 var assert = require('should');
 var sinon = require('sinon');
-var fs = require('fs');
 var moment = require('moment');
-var recordingPath = __dirname + '/../recordings';
-var wavFile = recordingPath + '/temp.wav';
-var mp3File = recordingPath + '/temp.mp3';
+var recordingPath = path.normalize(__dirname + '/../recordings');
+var wavFile = path.normalize(recordingPath + '/temp.wav');
+var mp3File = path.normalize(recordingPath + '/temp.mp3');
 
 describe('Schedule a recording', function() {
 	var schedule;
@@ -88,7 +89,7 @@ describe('Prepare post object', function() {
 		});
 	});
 	after(function(done){
-		fs.unlink(__dirname + '/../recordings/temp.wav', function() {
+		fs.unlink( path.normalize(__dirname + '/../recordings/temp.wav'), function() {
 			done();
 		});
 	});

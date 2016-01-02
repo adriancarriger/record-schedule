@@ -1,11 +1,11 @@
 'use strict';
 
-var service = require('../lib/service.js');
+var path = require('path');
+var service = require( path.normalize('../lib/service.js') );
 var assert = require('should');
-var tools = require('../lib/tools.js');
+var tools = require( path.normalize('../lib/tools.js') );
 
 describe('Start a background service', function() {
-	//*
 	it('should start a service', function(done) {
 		service.start(function(data){
 			data.exists.should.equal(true);
