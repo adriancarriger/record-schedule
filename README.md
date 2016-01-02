@@ -23,6 +23,7 @@ The config variables are:
 config.minutesToRecord =  10;
 config.recurrance.hour = 19;
 config.recurrance.minute = 0;
+config.recurrance.second = 0;
 config.recurrance.dayOfWeek = 0;
 config.server.url =  '<url>';
 // Optional Parameters
