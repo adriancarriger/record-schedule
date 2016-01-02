@@ -1,5 +1,5 @@
 # record-schedule - Record audio on a recurring schedule and post to a server using SoX and LAME
-[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-url]][daviddm-image] [![Coverage Status][coveralls-image]][coveralls-url]
+[![NPM version][npm-image]][npm-url] [![Dependency Status][daviddm-url]][daviddm-image]
 
 record-schedule is a CLI to run a background service that will:
  1. Automatically record audio on a recurring schedule using the [`sox`][sox] CLI
