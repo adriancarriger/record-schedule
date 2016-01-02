@@ -6,9 +6,5 @@ before_install:
 - sudo apt-get update -qq
 - sudo apt-get install -y libmp3lame-dev
 - sudo apt-get install -y libsox-dev
-- npm install n
-- sudo ./node_modules/.bin/n stable
-- rm -rf ~/.nvm
-
 after_script:
   - sudo $(which npm) run coveralls
