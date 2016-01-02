@@ -54,7 +54,7 @@
     "sinon": "^1.17.2"
   },
   "scripts": {
-    "coveralls": "sudo gulp test && cat coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
-    "test": "sudo gulp test"
+    "coveralls": "gulp test && cat coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
+    "test": "sudo $(which gulp) test"
   }
 }
