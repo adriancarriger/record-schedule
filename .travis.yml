@@ -3,7 +3,7 @@ env: CI=true
 node_js:
   - '0.10'
 before_install:
-- sudo apt-get install libmp3lame-dev
+- apt-get install libmp3lame-dev
 - apt-get install libsox-dev
 script: "sudo $(which npm) test"
 after_script:
