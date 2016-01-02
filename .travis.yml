@@ -6,6 +6,5 @@ before_install:
 - sudo apt-get update -qq
 - sudo apt-get install -y libmp3lame-dev
 - sudo apt-get install -y libsox-dev
-script: "sudo gulp test"
 after_script:
   - npm run coveralls
