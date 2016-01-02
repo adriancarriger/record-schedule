@@ -55,6 +55,6 @@
   },
   "scripts": {
     "coveralls": "gulp test && cat coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
-    "test": "sudo /home/travis/build/adriancarriger/record-schedule/node_modules/.bin/gulp -cwd /home/travis/build/adriancarriger/record-schedule"
+    "test": "sudo gulp"
   }
 }
