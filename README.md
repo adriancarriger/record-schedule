@@ -50,9 +50,5 @@ $ sudo record-schedule stop
    [node-mac]: https://github.com/coreybutler/node-mac
    [npm-url]: https://npmjs.org/package/record-schedule
    [npm-image]: https://badge.fury.io/js/record-schedule.svg
-   [travis-url]: https://travis-ci.org/adriancarriger/record-schedule
-   [travis-image]: https://travis-ci.org/adriancarriger/record-schedule.svg?branch=master
    [daviddm-url]: https://david-dm.org/adriancarriger/record-schedule.svg?theme=shields.io
    [daviddm-image]: https://david-dm.org/adriancarriger/record-schedule
-   [coveralls-image]: https://coveralls.io/repos/adriancarriger/record-schedule/badge.svg?branch=master&service=github
-   [coveralls-url]: https://coveralls.io/github/adriancarriger/record-schedule?branch=master
