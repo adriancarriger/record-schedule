@@ -1,11 +1,10 @@
 language: node_js
 env: CI=true
 node_js:
-  - '4.1'
+  - '0.12.9'
 before_install:
 - sudo apt-get update -qq
 - sudo apt-get install -y libmp3lame-dev
 - sudo apt-get install -y libsox-dev
-- sudo ln -s /usr/bin/nodejs /usr/bin/node
 after_script:
-  - sudo $(which npm) run coveralls
+  - sudo npm run coveralls
