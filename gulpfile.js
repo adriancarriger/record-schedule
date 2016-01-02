@@ -19,14 +19,10 @@ if (process.env.CI) {
 }
 
 gulp.task('set-test-env', function() {
-	console.log('\nabout to set test env');
 	if (process.env.SUDO_USER === undefined) {
 		console.log('\n\n Tests usually require sudo. \n\n');
 	}
-	console.dir(process);
-	console.log('about to set test');
 	process.env.NODE_ENV = 'test';
-	console.log('\nset test env');
 	return;
 });
 
