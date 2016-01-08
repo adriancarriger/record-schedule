@@ -28,7 +28,7 @@ describe('Schedule a recording', function() {
 	it('execute the schedule at the set time', function(done) {
 		this.timeout(20000);
 		schedule = record.scheduleRecording(recurrance, function() {
-			done();
+			setTimeout(function(){done()});
 		});
 	});
 	afterEach(function(){
@@ -44,7 +44,7 @@ describe('Record for x minutes', function() {
 		this.timeout(20000);
 		record.startRecording(0.02, function(unix) {
 			tools.fileExists(wavFile).should.equal(true);
-			done();
+			setTimeout(function(){done()});
 		});
 	});
 });
@@ -59,7 +59,7 @@ describe('Convert recording to MP3', function() {
 			// WAV deleted
 			var noWavFile = tools.fileExists(wavFile) == false;
 			noWavFile.should.equal(true);
-			done();
+			setTimeout(function(){done()});
 		});
 	});
 });
@@ -69,7 +69,7 @@ describe('Prepare post object', function() {
 	before(function(done){
 		record.startRecording(0.02, function(unix) {
 			testUnix = unix;
-			done();
+			setTimeout(function(){done()});
 		});
 	});
 	it('should contain temp.mp3 in the recording directory before conversion starts', function() {
@@ -79,18 +79,18 @@ describe('Prepare post object', function() {
 		record.preparePost('http://example.com', {unix: testUnix}, function(postObject) {
 			var testMaxUnix = Math.floor(Date.now() / 1000);
 			postObject.formData.unix.should.be.within(testMinUnix,testMaxUnix);
-			done();
+			setTimeout(function(){done()});
 		});
 	});
 	it('should have a readable file stream', function(done) {
 		record.preparePost('http://example.com', {unix: testUnix}, function(postObject) {
 			postObject.formData.my_file.readable.should.equal(true);
-			done();
+			setTimeout(function(){done()});
 		});
 	});
 	after(function(done){
 		fs.unlink( path.normalize(__dirname + '/../recordings/temp.wav'), function() {
-			done();
+			setTimeout(function(){done()});
 		});
 	});
 });
@@ -102,7 +102,7 @@ describe('Remove MP3 file', function() {
 		record.finish(function(){
 			var noMp3File = tools.fileExists(mp3File) == false;
 			noMp3File.should.equal(true);
-			done();
+			setTimeout(function(){done()});
 		});
 	});
 });
