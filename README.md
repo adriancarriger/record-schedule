@@ -35,11 +35,11 @@ config.params.foo = 'bar';
 ## Running
  * Run as a background service (creating OSX daemons [requires sudo/root][node-mac] privileges)
 ```sh
-$ sudo record-schedule start
+$ record-schedule start
 ```
  * To stop scheduled recordings
 ```sh
-$ sudo record-schedule stop
+$ record-schedule stop
 ```
 
    [sox]: http://sox.sourceforge.net/
