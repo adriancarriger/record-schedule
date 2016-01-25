@@ -1,7 +1,7 @@
 {
   "name": "record-schedule",
-  "description": "Record audio on a recurring schedule and post to a server using SoX and Lame",
-  "version": "0.1.7",
+  "description": "Record audio on a recurring schedule and post to a server using Sox and Lame",
+  "version": "0.1.6",
   "homepage": "https://github.com/adriancarriger/record-schedule",
   "bugs": "https://github.com/adriancarriger/record-schedule/issues",
   "license": "MIT",
