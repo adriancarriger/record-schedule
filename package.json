@@ -1,7 +1,7 @@
 {
   "name": "record-schedule",
   "description": "Record audio on a recurring schedule and post to a server using Sox and Lame",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "homepage": "https://github.com/adriancarriger/record-schedule",
   "bugs": "https://github.com/adriancarriger/record-schedule/issues",
   "license": "MIT",
@@ -26,10 +26,14 @@
     "record-schedule": "lib/index.js"
   },
   "dependencies": {
-    "moment": "^2.10.6",
-    "node-schedule": "^0.6.0",
+    "gulp": "^3.9.1",
+    "mocha": "^2.4.5",
+    "mocha-sinon": "^1.1.5",
+    "moment": "^2.11.2",
+    "node-schedule": "^1.0.0",
     "os-homedir": "^1.0.1",
-    "request": "^2.67.0"
+    "request": "^2.69.0",
+    "sinon": "^1.17.3"
   },
   "optionalDependencies": {
     "node-mac": "^0.1.3",
