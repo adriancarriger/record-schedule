@@ -1,4 +1,6 @@
 # record-schedule - Record audio on a recurring schedule and post to a server using SoX and LAME
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/adriancarriger/record-schedule.svg)](https://greenkeeper.io/)
 [![NPM version][npm-image]][npm-url] [![Dependency Status][daviddm-url]][daviddm-image]
 
 record-schedule is a CLI to run a background service that will:
